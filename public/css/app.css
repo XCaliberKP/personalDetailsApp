@@ -1,0 +1,75 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type='text'],
+form input[type='file'] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form div {
+        padding: 0 10px;
+    }
+
+    form input[type='text'],
+    form input[type='file'],
+    button {
+        width: calc(100% - 20px);
+    }
+}
